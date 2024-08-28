@@ -18,14 +18,7 @@ resource "openstack_compute_instance_v2" "linux-ubuntu-01" {
   key_pair        = openstack_compute_keypair_v2.my_key.name
 
 
- # image_id        = "a5c7c509-209c-49fe-a2ae-9318926bd1ed"
- # flavor_id       = "47f92467-5a94-45b5-a333-34220660aa3b"
-
-  #metadata = {
-  #  this = "that"
-  #}
-
-network {
+  network {
     uuid = openstack_networking_network_v2.minha_rede.id
     port = openstack_networking_port_v2.instance01_eth0.id
   }
