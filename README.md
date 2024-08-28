@@ -33,4 +33,3 @@ quando a estrutura não for mais necessária é só rodar o script para destrui-
 terraform destroy<br>
 
 
-# openstack-edge-instancia-ubuntu
